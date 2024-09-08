@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    transition: all 0s linear;
+    font-family: "Oswald", sans-serif, Arial, sans-serif;
+}
+
+
+.content-detail-unlock-ai {
+    display: none;
+}
+
+.container-detail-ai {
+    background: #ffff;
+    text-align: center;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+.notice-package-ai {
+    margin: 1.5rem;
+}
+
+
+.container-detail-ai select {
+    width: 100%;
+    padding: 0.3rem 0.8rem;
+
+    color: rgb(231, 119, 123);
+    margin-bottom: 1.5rem;
+    outline: none;
+    border: 1.2px solid rgba(231, 119, 123);
+
+}
+
+.info-pay .title-befor-trading-platform{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;    
+}
+
+.info-pay .cell-title{
+    padding-bottom: 0.7rem;
+}
+
+.info-pay .card-info-net-bep20,.card-info-net-king-bo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.88rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.info-pay .cell-right {
+    display: grid;
+    grid-template-columns: 1fr 5rem;
+
+    text-align: left;
+    /* border: 1px solid rgb(222, 226, 230); */
+
+    font-size: 1.1rem;
+}
+
+.info-pay .cell-right input {
+    
+    padding: 0.5rem 0.3rem;/* nd*/
+
+    color: rgb(231, 119, 123);
+    padding: 0.5rem 0.3rem;
+    outline: none;
+    border: 0 solid #fff;
+
+    pointer-events:none;
+    font-size: 1.1rem;
+    
+    border: 1px solid rgb(222, 226, 230);
+    border-right: 0px solid #ffff;
+    
+}
+
+
+.info-pay .cell-right label {
+
+    border: 1px solid rgb(231, 119, 123);
+    text-align: center;
+
+    padding: 0.5rem 0.3rem;/* nd*/
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.info-pay .cell-right label:hover{
+    background-color: rgba(108, 117, 125, 0.8);
+    color: #ffff;
+}
+
+.container-detail-ai .total-pay{
+    padding: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.container-detail-ai .btn-c-pay{
+    display: flex;
+    justify-content: center;
+}
+
+.container-detail-ai .btn-pay{
+    background: rgb(50,106,188);
+    padding: 0.2rem 0.9rem;
+    font-size: 1.2rem;
+    color: #ffff;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+    width: 50%;
+}
+
+.tele-info{
+    text-align: center;
+    padding: 0.3rem ;
+    width: 100%;
+    border: 1px solid violet;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tele-info a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+
+
+@media (max-width : 840px){
+
+    .info-pay .card-info-net-bep20,.card-info-net-king-bo {
+        display: grid;
+        /* grid-template-columns: 1fr;  */
+        /* grid-template-rows: 100px 100px; 
+        gap: 10px;  */
+    }
+
+}

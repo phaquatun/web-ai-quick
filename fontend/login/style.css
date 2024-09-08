@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    transition: all 0s linear;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+body {
+    background-color: rgba(245, 247, 251, 0.9);
+}
+
+.box {
+    height: 100vh;
+    width: 100vw;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(85, 85, 85, 0.9);
+}
+
+
+.container {
+
+
+
+    /* height: 15rem;
+    width: 30rem; */
+    text-align: center;
+
+
+    /* position: sticky; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+.container .action {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.container .title-action {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.container .info {
+    background-color: rgba(255, 255, 255, 01);
+    border-radius: 4px;
+
+    width: 30vw;
+    padding: 2rem 2.2rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.container .title-info,
+.user {
+    text-align: left;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container .user,
+#user-name {
+    display: none;
+}
+
+.container .fill-info {
+    color: rgb(109, 153, 202);
+    outline: none;
+    border: 1px solid rgb(222, 226, 230);
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+.container .fill-info::placeholder {
+    color: rgb(109, 153, 202);
+}
+
+.fill-info:focus::placeholder {
+    color: transparent;
+}
+
+.container .c-remember-log,
+.notice-act {
+    margin-top: 0.7rem;
+}
+
+/* .container .notice-act{
+    width: 15vw;
+    height: 15vh;
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+} */
+
+#remember-log {
+    margin-right: 0.5rem;
+}
+
+.container .btn-action {
+    margin: 1rem 0;
+    background: rgba(50, 106, 188, 0.94);
+    color: whitesmoke;
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-size: 150;
+    cursor: pointer;
+}
+
+.container .forget-pass {
+    color: rgba(50, 106, 188, 0.9);
+    font-weight: 420;
+    cursor: pointer;
+}
+
+.container .regis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .act-ext {
+    color: rgb(29, 82, 162);
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.dis-sele-txt {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.container .highlight-regist {
+    color: rgba(50, 106, 188, 0.9);
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 32%;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    /* background-color: rgb(0, 0, 0); */
+    /* Fallback color */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+    min-height: 20%;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.success{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.ic-success{
+    background-image: url("icons8-success-40.png") ;
+    background-repeat: no-repeat;
+    width: 3.5rem;
+    height: 2.5rem;
+}
+
+.content-ic{
+    font-size: 35px;
+    font-weight: bold;
+    color: violet;
+
+}
+.modal-content p {
+    color: cadetblue;
+    font-size: 20px;
+    font-weight: bolder;
+    color:  rgba(142, 200, 146,1.2);
+    margin-bottom: 2rem;
+}
+
+
+
+@media (max-width:1200px) {
+    .container .info {
+        width: 42vw;
+    }
+}
+
+@media (max-width:780px) {
+    .container .info {
+        width: 70vw;
+    }
+}
+
+
+@media (max-width:430px) {
+    .container .info {
+        width: 85vw;
+    }
+}

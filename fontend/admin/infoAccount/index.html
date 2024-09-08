@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin DK Tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    
+    <h2 >Admin DK Tool</h2>
+
+    <div class="find">
+
+      <div class="search">
+        <img src="icons8-search-38.png" alt="" >
+        <input type="text" placeholder="search account" name="search-account" id="search-account">
+      </div>
+
+    </div>
+    
+
+    <div class="box">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th style="width: 5%">stt</th>
+            <th style="width: 25%">user</th>
+            <th style="width: 15%">name</th>
+            <th  style="width: 15%">pass</th>
+            <th>date regist</th>
+            <th>status</th>
+            <th>date active</th>
+            <th style="width: 5%">active</th>
+          </tr>
+        </thead>
+
+        <tbody class="detailTable"></tbody>
+      </table>
+    </div>
+    <div class="around">
+      <div class="aPre"><img src="icons-left.png" class="pre" alt="" /></div>
+      <div class="aNex"><img src="icons-right.png" class="next" alt="" /></div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Active Account Client</p>
+        <div class="model-note"><div class="user"></div></div>
+        <div class="model-note"><div class="pass"></div></div>
+        <div class="model-note"><div class="date"></div></div>
+        <div class="model-note">
+          <label for="pass-admin">PassAdmin : </label>
+          <input type="text" name="pass" id="pass-admin" />
+        </div>
+        <div class="model-note">
+          <div class="active">Active</div>
+          <div class="delete">Delete</div>
+          <div class="loader">
+            <div class="loading"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

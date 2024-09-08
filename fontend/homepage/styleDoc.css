@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    transition: all 0s linear;
+    font-family: "Oswald", sans-serif, Arial, sans-serif;
+}
+
+.content-doc{
+    display: none;
+}
+
+.container-doc{
+    text-align: center;
+    background: #ffff;
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    color: rgba(73, 80, 87,0.92);
+    
+    min-width: fit-content;
+}
+
+.content-doc h3{
+    text-transform: uppercase;
+    padding: 1.1rem 0;
+}
+
+.container-doc h5{
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}

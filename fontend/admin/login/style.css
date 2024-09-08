@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    transition: all 0.5s linear;
+    font-family: Arial, sans-serif;
+}
+
+
+html {
+    background-color: white;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+}
+
+.container .box{
+    text-align: center;
+    font-size: medium;
+    padding: 4rem 0;
+    border: 2px solid darkcyan;
+    border-radius: 1.2rem;
+    box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    font-size: 3rem;
+    color: dodgerblue;
+}
+
+.container .box .user{
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    color: darkcyan;
+}
+
+.container .box .user input{
+    border: none;
+    border-bottom: 3px solid darkgray;
+    font-size: large;
+    outline: none;
+    margin-left: 0.6rem;
+    padding-bottom: 5px;
+}
+
+.container .box .pass{
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    color: darkcyan;
+
+}
+
+
+.container .box .pass input{
+    border: none;
+    border-bottom: 3px solid darkgray;
+    font-size: large;
+    outline: none;
+    margin-left: 0.6rem;
+}
+
+.container .box .btnLogin {
+    text-align: center;
+    width: 30%;
+    padding: 0.7rem 0.5rem;
+    background-color: dodgerblue;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.4rem;
+    font-size: larger;
+    cursor: pointer;
+    color: white;
+    margin: 1rem;
+}
+
+@media (max-width:520px) {
+    .container .box label{
+        font-size: medium;
+    }
+}
+
+@media (max-width:360px) {
+    .container .box label{
+        font-size: small;
+    }
+    .container .box .pass input{
+        font-size: medium;
+    }
+}
+

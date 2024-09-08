@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    transition: all 0s linear;
+    font-family: "Oswald", sans-serif, Arial, sans-serif;
+}
+
+.container-ai-unlock {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.3rem;
+    justify-content: space-between;
+    align-items: center;
+    min-width: fit-content;
+}
+
+.container-ai-unlock .card-ai {
+    background-color: #ffff;
+    min-width: 30%;
+}
+
+.container-ai-unlock .title-unlock-ai {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.container-ai-unlock img {
+    width: 36%;
+}
+
+.container-ai-unlock .price-ai {
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    text-align: center;
+    padding: 0 1.3rem;
+
+}
+
+
+.container-ai-unlock .price-ai div {
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(222, 226, 230, 0.8);
+}
+
+.container-ai-unlock .card-ai .cont-buy-ai {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-ai-unlock .card-ai .cont-buy-ai .btn-buy {
+    margin: 1.2rem 0;
+
+    padding: 0.5rem 1rem;
+    color: #ffff;
+    background-color: rgb(50, 106, 188);
+    border-radius: 6px;
+    text-align: center;
+
+    width: 40%;
+}
+
+@media (max-width : 1200px){
+   
+/* .container-ai-unlock {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.3rem;
+    justify-content: start;
+    align-items: center;
+    min-width: fit-content;
+} */
+
+/* .container-ai-unlock .card-ai {
+    background-color: #ffff;
+    min-width: 35%;
+} */
+
+}

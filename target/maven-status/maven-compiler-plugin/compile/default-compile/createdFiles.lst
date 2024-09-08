@@ -1,0 +1,13 @@
+com\dao\FormResponse.class
+com\server\SetupServer.class
+com\server\ConstanceWeb.class
+com\client\HomePageV2.class
+com\dao\client\DaoClientLogin.class
+com\dao\DaoServer.class
+com\client\PageServiceV2.class
+com\dao\admin\DaoAdmin.class
+com\client\HandlerCookieV2.class
+com\server\DeployWeb.class
+com\admin\AdminPage.class
+com\client\HandlerCookieV2$CheckCookie.class
+com\dao\client\DaoClientService.class

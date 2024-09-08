@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    font-family: Arial, sans-serif;
+}
+
+.totalAcc {
+    margin: 0 30px;
+    margin-top: 30px;
+
+}
+
+.find {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 5% auto;
+    padding: 0.5rem 1.2rem;
+
+    border-radius: 25px;
+    border: 2px solid #ddd
+    
+}
+
+
+.search input {
+    border: 0 solid white;
+    outline: none;
+    font-size: 1rem;
+    margin-left: 1.2rem;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 5.5rem;
+    color: darkcyan;
+    margin-bottom: 2rem;
+    font-style: italic;
+    cursor: pointer;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    margin-top: 60px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    color: black;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+td {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.around {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rbg(233, 234, 238);
+}
+
+.ip {
+    column-width: 150px;
+}
+
+.around .aPre,
+.aNex {
+    background-color: rgb(233, 234, 238);
+    border-radius: 7px;
+    margin: 5px 30px;
+}
+
+.around img {
+    margin: 10px 30px;
+    background-color: rbg(233, 234, 238);
+    border-radius: 7px;
+
+}
+
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal p {
+    font-size: 1rem;
+    color: darkcyan;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal .model-note {
+    display: flex;
+    margin: 10px;
+}
+
+.modal-content label {
+    padding: 5px 0;
+}
+
+.modal-content input {
+    outline: none;
+    border: 0 solid white;
+    border-bottom: 2px solid violet;
+    font-size: 1rem;
+    padding: 5px 1rem;
+}
+
+.modal-content .active ,.delete {
+    background-color: violet;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    color: white;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    margin-right: 1.9rem;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    color: red;
+    margin-left: 2rem;
+}
+
+
+
+
+.loading {
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #3498db;
+    padding: 5px;
+    -webkit-animation: spin 1s linear infinite;
+    /* Safari */
+    animation: spin 1s linear infinite;
+    margin-right: 5px;
+    display: none;
+}
+
+.incorect {
+    display: none;
+}
+
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

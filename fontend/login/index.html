@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI</title>
+    <link rel="stylesheet" href="yk/style.css" />
+  </head>
+
+  <body>
+
+    <div class="box">
+      <div class="container">
+        <div class="action dis-sele-txt">Đăng Nhập</div>
+        <div class="title-action dis-sele-txt">
+          Vui Lòng đăng nhập để tiếp tuc sử dụng
+        </div>
+
+        <div class="info">
+          <div class="user dis-sele-txt">User</div>
+          <input
+            type="text"
+            class="fill-info"
+            name="user-name"
+            id="user-name"
+            placeholder="Tên hiển thị"
+          />
+
+          <div class="title-info dis-sele-txt">Email</div>
+          <input
+            type="email"
+            class="fill-info"
+            name="email"
+            id="email"
+            placeholder="Nhập email"
+          />
+
+          <div class="title-info dis-sele-txt">Mật Khẩu</div>
+          <input
+            type="text"
+            class="fill-info"
+            name="password"
+            id="password"
+            placeholder="Nhập Mật Khẩu"
+          />
+
+          <div class="c-remember-log" style="text-align: left">
+            <input type="checkbox" checked="checked" id="remember-log" />
+            <label class="title-info remember dis-sele-txt" for="remember-log">
+              Ghi nhớ đăng nhập</label
+            >
+          </div>
+          <div class="notice-act"></div>
+          <div class="btn-action">Đăng Nhập</div>
+          <div class="forget-pass dis-sele-txt">Quên mật khẩu ?</div>
+        </div>
+        <div class="regis">
+          <div class="ext .dis-sele-txt">Bạn chưa có tài khoản ?</div>
+          <div class="act-ext dis-sele-txt">Đăng ký ngay !</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="success">
+          <div class="ic-success"></div>
+          <div class="content-ic">Success</div>
+        </div>
+        <p>Đăng ký Thành Công</p>
+      </div>
+    </div>
+   
+
+    <script src="yk/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+	"host":"localhost",
+	"port":80,
+	"admin":{"id":"adminweb","pass":"xxxadmin6789"},
+	"walletAddress":"0xbE657B8A9c4eE19CCa7A7CbbfF37Fd17d98ff37b",
+	"adminActive":"pass123q",
+	"package-basic-ai":[
+		{"date":3,"price":"$5"},
+		{"date":30,"price":"$40"},
+		{"date":60,"price":"$60"}
+	],
+	"package-advanded-ai":[
+		{"date":3,"price":"$10"},
+		{"date":30,"price":"$80"},
+		{"date":60,"price":"$140"}
+	],
+	"package-special-ai":[
+		{"date":3,"price":"$15"},
+		{"date":30,"price":"$130"},
+		{"date":60,"price":"$250"}
+	],
+	"sslFileTrial":""
+}
